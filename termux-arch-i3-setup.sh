@@ -1,8 +1,10 @@
 pacman -Sy
-pacman --noconfirm -S sudo glibc
 
-useradd -m -p . helixlit
-sed 's/root ALL=(ALL:ALL) ALL/root ALL=(ALL:ALL) ALL\nhelixlit ALL=(ALL:ALL) ALL/' /etc/sudoers
+useradd -m helixlit
+passwd helixlit
+sed -i 's/root ALL=(ALL:ALL) ALL/root ALL=(ALL:ALL) ALL\nhelixlit ALL=(ALL:ALL) ALL/' /etc/sudoers
+
+pacman --noconfirm -S sudo glibc
 
 su helixlit
 sudo whoami
