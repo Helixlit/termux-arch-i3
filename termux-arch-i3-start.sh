@@ -1,1 +1,1 @@
-termux-x11 :1 -xstartup "i3"
+termux-x11 :1 -xstartup "i3" dpi 120
