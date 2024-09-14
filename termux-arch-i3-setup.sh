@@ -8,7 +8,7 @@ useradd -m $user_name
 passwd $user_name
 
 # install needed packages
-pacman --noconfirm -S sudo glibc i3 dmenu firefox alacritty
+pacman --noconfirm -S sudo glibc i3 dmenu firefox alacritty neovim
 # install all dependencies
 pacman --noconfirm -Syu
 
