@@ -1,0 +1,1 @@
+termux-x11 :1 -xstartup "i3"

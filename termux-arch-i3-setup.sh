@@ -15,6 +15,7 @@ pacman --noconfirm -Syu
 # add user to sudoers
 sed -i 's/root ALL=(ALL:ALL) ALL/root ALL=(ALL:ALL) ALL\n$user_name ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-
-su $user_name
-sudo whoami
+# install yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
